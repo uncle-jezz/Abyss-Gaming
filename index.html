@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="vieewport" content="with=device-width, initital-scale=1.0">
+        <title>Abyss (India)</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href=index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">PC</a></li>
+                        <li><a href="">Console</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+
+            </nav>
+        <div class="text-box">
+            <h1>ABYSS GAMING</h1>
+            <p>Making the best in class Gaming peripherals <br>Estd. 2021</p>
+            <a href="" class="hero-btn">Join our server to learn more</a>
+
+        </div>
+        </section>
+
+        <!----------Course---------->
+
+        <section class="course">
+            <h1>Products we have to offer</h1>
+            <p>PCs, Peripherals & more</p>
+
+            <div class="row">
+                <div class="course-col">
+                    <h3>PCs</h3>
+                    <p>LAPTOPS</p>
+                    <p>PRE-BUILTS</p>
+                    <p>MONITORS</p>
+                </div>
+                <div class="course-col">
+                    <h3>Peripherals</h3>
+                    <p>MICE</p>
+                    <p>MOUSE MATS</p>
+                    <p>KEYBOARDS</p>
+                    <p>AUDIO</p>
+                </div>
+                <div class="course-col">
+                    <h3>Streaming</h3>
+                    <p>WEBCAMS</p>
+                    <p>MICROPHONES</p>
+                    <p>CAPTURE CARD & OTHERS</p>
+                </div>
+            </div>
+        </section>
+
+        <!------lifestyle------>
+        <section class="lifestyle">
+            <h1>Lifestyle</h1>
+            <p>Get only the Industry's best.  It doesn't get any better than that.</p>
+            <div class="row">
+                <div class="lifestyle-col">
+                    <img src="images/gr2.jpg">
+                    <div class="layer">
+                        <h3>Minimal</h3>
+                    </div>
+                </div>
+                <div class="lifestyle-col">
+                    <img src="images/gr1.jpg">
+                    <div class="layer">
+                        <h3>Enthusiast</h3>
+                    </div>
+                </div>
+                <div class="lifestyle-col">
+                    <img src="images/gr3.jpg">
+                    <div class="layer">
+                        <h3>Pro</h3>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--------Products-------->
+        <section class="products">
+            <h1>Our Products</h1>
+            <p>Try these out!</p>
+
+            <div class="row">
+                <div class="products-col">
+                    <img src="images/keyboard.jpg">
+                    <h3>The Abyss Mech 1000</h3>
+                    <p>Speed. Mechanical. Durability</p>
+                </div>
+                <div class="products-col">
+                    <img src="images/mouse.jpg">
+                    <h3>The Abyss Grind 1250</h3>
+                    <p>Precision. Aim. Accuracy</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--------------reviews--------------->
+        <section class="reviews">
+            <h1>Words from the TechTubers</h1>
+            
+
+            <div class="row">
+                <div class="reviews-col">
+                    <img src="images/man face.jpg">
+                    <div>
+                        <p>
+                            Probably the best lineup of products at a very good price.
+                        </p>
+                        <h3>Tech Bot</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                </div>
+                <div class="reviews-col">
+                    <img src="images/woman face.jpg">
+                    <div>
+                        <p>
+                            Never worked with such amazing gear before.
+                        </p>
+                        <h3>Suzyyy</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---------Call To Action---------->
+
+        <section class="cta">
+            <h1>Sign up for our newsletter now!</h1>
+            <a href=""class="hero-btn">Join our server</a>
+        </section>
+
+    <!---------Footer---------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Abyss™ is the world's leading lifestyle brand for gamers.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-discord"></i>
+        </div>
+        <p>Developed by © uncle_jezz</p>
+    </section>
+    
+        <!-------------JavaScript for Toggle Menu---------------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
